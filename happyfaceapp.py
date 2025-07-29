@@ -40,7 +40,7 @@ def home():
 
 @app.post("/predict/")
 def predict(text: str):
-    result = nlp #classifier(text)
+    result = nlp(text) #classifier(text)
     return {"label": result[0]['label'], "score": result[0]['score']}
 
 
