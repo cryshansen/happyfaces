@@ -33,8 +33,8 @@ result2 = nlp("I lost my job how will i pay rent")
 
 print(result2)
 
-
-@app.get("/")
+# this is a test endpoint
+@app.get("/py")
 def home():
     return {"message": "API is running"}
 
